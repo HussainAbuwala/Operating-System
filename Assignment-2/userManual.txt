@@ -1,0 +1,122 @@
+------------------------User Manual----------------------------------
+
+-> There are in total 3 ".c" files:
+    
+    1.task1server27502333.c
+    2.task2server27502333.c
+    3.task3server27502333.c
+    4.client27502333.c
+
+
+-> Below I have shown important aspects regarding the above three files that i will discuss in detail in the subsequent sections:
+    
+    1. How to compile the ".c" file
+    2. How to execute the executable file produced after compiling the ".c" file
+    3. Functionalities available
+
+
+
+-> User guide for task1server27502333.c
+
+
+    1. How to compile the ".c" file
+        
+       a) Open your terminal
+       b) Then go to the directory where the file "task1server27502333.c" is located.
+       c) type "gcc task1server27502333.c" in the terminal.
+       d) This will produce a "a.out" file (executable) in the same directory where "task1server27502333.c" is located.
+
+    2. How to execute the executable file produced after compiling the ".c" file
+
+       a) after compiling the "task1server27502333.c" file as shown in the previous step, type "iol -- ./a.out" to 
+          execute the executable file "a.out" in the iol terminal.
+
+    "AFTER RUNNING THE SERVER PROGRAM AS DESCRIBED ABOVE, ONLLY THEN RUN THE CLIENT PROGRAM IN A NEW TERMINAL. HOW TO RUN THE CLIENT PROGRAM IS
+    SHOW AT THE END"
+
+    3. Functionalities available
+
+        The client can send messages to the server and the messages will be displayed in the server side inside the client box.
+
+
+-> User guide for task2server27502333.c
+
+
+    1. How to compile the ".c" file
+        
+       a) Open your terminal
+       b) Then go to the directory where the file "task2server27502333.c" is located.
+       c) type "gcc task2server27502333.c" in the terminal.
+       d) This will produce a "a.out" file (executable) in the same directory where "task2server27502333.c" is located.
+
+    2. How to execute the executable file produced after compiling the ".c" file
+
+       a) after compiling the "task2server27502333.c" file as shown in the previous step, type "iol -- ./a.out" to 
+          execute the executable file "a.out" in the iol terminal.
+
+    "AFTER RUNNING THE SERVER PROGRAM AS DESCRIBED ABOVE, ONLLY THEN RUN THE CLIENT PROGRAM IN A NEW TERMINAL. HOW TO RUN THE CLIENT PROGRAM IS
+    SHOW AT THE END"
+
+    3. Functionalities available
+
+        -- The client can send messages to the server and the messages will be displayed in the server side inside the client box.
+        -- ALso the server can quit by pressing the shutdown button on the server side
+
+
+
+-> User guide for task3server27502333.c
+
+
+    1. How to compile the ".c" file
+        
+       a) Open your terminal
+       b) Then go to the directory where the file "task3server27502333.c" is located.
+       c) type "gcc task3server27502333.c" in the terminal.
+       d) This will produce a "a.out" file (executable) in the same directory where "task3server27502333.c" is located.
+
+    2. How to execute the executable file produced after compiling the ".c" file
+
+       a) after compiling the "task3server27502333.c" file as shown in the previous step, type "iol -- ./a.out" to 
+          execute the executable file "a.out" in the iol terminal.
+
+    "AFTER RUNNING THE SERVER PROGRAM AS DESCRIBED ABOVE, ONLLY THEN RUN THE CLIENT PROGRAM IN A NEW TERMINAL. HOW TO RUN THE CLIENT PROGRAM IS
+    SHOW AT THE END"
+
+    3. Functionalities available
+
+        -- The client can send messages to the server and the messages will be displayed in the server side inside the client box.
+        -- ALso the server can quit by pressing the shutdown button on the server side
+        -- Up to 5 clients can connect to the server and send messages
+
+
+-> User guide for client27502333.c
+
+    1. How to compile the ".c" file
+        
+       a) Open your terminal
+       b) Then go to the directory where the file "client27502333.c" is located.
+       c) type "gcc client27502333.c" in the terminal.
+       d) This will produce a "a.out" file (executable) in the same directory where "client27502333.c" is located.
+
+    2. How to execute the executable file produced after compiling the ".c" file
+
+       a) after compiling the "client27502333.c" file as shown in the previous step, type "./a.out" to 
+          execute the executable file "a.out" in the bash terminal.
+
+
+
+-> Limitations of my desktop environment
+
+        1) When the client terminates, my program does not deal with cleaning up on the server side. (AS MENTIONED IN THE ASSIGNMENT SPEC, THIS IS NOT
+                                                                                                      EXPECTED FROM US)
+        2) only 5 clients are supported in my program
+        3) If any client terminates, my program is not flexible enough to allow other clients to join even if there are <5 clients connected.
+        4) If any client terminates before the server, there are some unexpected behaviours on the server side.
+
+
+
+-> Improvements that can be done
+
+        1) Allow the support of more than 5 clients to connect to the server
+        2) If any client terminates, the server should take into account that an client has terminated. (DYNAMIC LIST CAN BE MAINATAINED ON SERVER SIDE)
+        3) Allow the server to message to the client also using send on the server side and recv on the client side

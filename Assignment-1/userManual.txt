@@ -1,0 +1,217 @@
+------------------------User Manual----------------------------------
+
+-> There are in total 3 ".c" files:
+    
+    1.task1shell27502333.c
+    2.task2shell27502333.c
+    3.task3shell27502333.c
+
+
+-> Below I have shown important aspects regarding the above three files that i will discuss in detail in the subsequent sections:
+    
+    1. How to compile the ".c" file
+    2. How to execute the executable file produced after compiling the ".c" file
+    3. Functionalities available for the user
+    4. Assumptions made
+    5. Reasons for error
+    6. Limitations
+
+
+-> User guide for task1shell27502333.c
+
+    Note: - This program is a non-graphical shell where the user will need to type in commands in the terminal to exploit the various
+            functionalities mentioned below.
+
+    1. How to compile the ".c" file
+        
+       a) Open your terminal
+       b) Then go to the directory where the file "task1shell27502333.c" is located.
+       c) type "gcc task1shell27502333.c" in the terminal.
+       d) This will produce a "a.out" file (executable) in the same directory where "task1shell27502333.c" is located.
+
+    2. How to execute the executable file produced after compiling the ".c" file
+
+       a) after compiling the "task1shell27502333.c" file as shown in the previous step, type "./a.out" to 
+          execute the executable file "a.out".
+
+    3. Functionalities available for the user
+
+        I) Change directory
+            
+            --- type "d:NameOfDirectory" inside terminal.
+
+        II) Execute an executable file 
+
+            --- type "x:NameOfExecutable" inside terminal
+
+        III) Display the contents of text file
+
+            --- type "v:NameOfTextFile" inside terminal
+
+        IV) Quit
+
+            --- type "q:" to quit the program.
+
+
+    4. Assumptions made
+
+        a) If commands the user types in does not start with "d" or "x" or "v" or "q", the command of the user is just skipped.
+        b) User is not interested in seeing hidden files. So all hidden files in a directory are skipped and not displayed.
+
+    5. Reasons for error
+
+        Note: Each of the reasons for error mentioned below will be notified to the user during the event of an error.
+
+        I) File, or directory does not exists
+        II) File cannot be executed due to not having permissions
+        III) Text file cannot be read due to not having permissions
+        IV) Directory cannot be opened due to not having permissions
+        VII) Text file is too large to be displayed. (>500 kb)
+
+
+-> User guide for task2shell27502333.c
+
+    Note: - This program is a graphical shell where the user will select different options in the graphical shell to exploit the various
+            functionalities mentioned below.
+
+    1. How to compile the ".c" file
+        
+       a) Open your terminal
+       b) Then go to the directory where the file "task2shell27502333.c" is located.
+       c) type "gcc task2shell27502333.c" in the terminal.
+       d) This will produce a "a.out" file (executable) in the same directory where "task2shell27502333.c" is located.
+
+    2. How to execute the executable file produced after compiling the ".c" file
+
+       a) after compiling the "task2shell27502333.c" file as shown in the previous step, type "./a.out" to 
+          execute the executable file "a.out".
+
+    3. Functionalities available for the user
+
+        I) Change directory
+            
+           a) All the directories are shown in color "green". To get into any directory, do a left click on the green option.
+           b) You can also go to the parent directory by doing a left click on the blue option.
+
+        II) Execute an executable file 
+
+           a) All the executable files are shown in color "orange". To execute the file, do a left click on the orange option.
+
+        III) Display the contents of text file
+
+            --- All text file are shown in color "yellow". To open text file, do a left click on the yellow option.
+
+        IV) Quit
+
+            --- Do a left click on the quit option which has a red background color.
+
+    4. Assumptions made
+
+        a) User is not interested in seeing hidden files. So all hidden files in a directory are skipped and not displayed.
+        b) user is not color blind so that he/she can read the above user guide for the functionalities he/she can user.
+
+    5. Reasons for error
+
+        Note: Each of the reasons for error mentioned below will be notified to the user during the event of an error. All the 
+              Error messages will be shown in the black box at the top of the screen with a red color font.
+
+        Note: If everything is ok, then there will be a message always in the black box at the top saying "Status: Ok" where 
+               "Ok" will have a green font.
+
+        I) File cannot be executed due to not having permissions
+        II) Text file cannot be read due to not having permissions
+        III) Directory cannot be opened due to not having permissions
+        IV) Text file is too large to be displayed. (>500 kb)
+
+
+
+
+-> User guide for task3shell27502333.c
+
+    Note: - This program is a graphical shell where the user will select different options in the graphical shell to exploit the various
+            functionalities mentioned below.
+
+    1. How to compile the ".c" file
+        
+       a) Open your terminal
+       b) Then go to the directory where the file "task3shell27502333.c" is located.
+       c) type "gcc task3shell27502333.c" in the terminal.
+       d) This will produce a "a.out" file (executable) in the same directory where "task3shell27502333.c" is located.
+
+    2. How to execute the executable file produced after compiling the ".c" file
+
+       a) after compiling the "task3shell27502333.c" file as shown in the previous step, type "./a.out" to 
+          execute the executable file "a.out".
+
+    3. Functionalities available for the user
+
+        I) Change directory
+            
+           a) All the directories are shown in color "green". To get into any directory, do a left click on the green option.
+           b) You can also go to the parent directory by doing a left click on the blue option.
+
+        II) Execute an executable file 
+
+           a) All the executable files are shown in color "orange". To execute the file, do a left click on the orange option.
+
+        III) Display the contents of text file
+
+            a) All text file are shown in color "yellow". To open text file, do a left click on the yellow option.
+
+        IV) Copy and paste
+
+            a) Executable files (orange color) and text files (yellow color) can be copy and pasted to whichever
+               directory the user wants.
+
+            b) Right click on any executable or text file. There will be a copy option which will appear on the top of the page.
+
+            c) Do a left click on the copy option.
+
+            d) After the copy option is selected, an paste option will appear. 
+
+            e) Go to any directory and do a left click on the paste option and the file will appear.
+        
+            f) If the copied file already exists, the new file will have the name "copy of [oldfileName]".
+
+        VI) Cut and paste
+
+            a) Executable files (orange color) and text files (yellow color) can be cut and pasted to whichever
+               directory the user wants.
+
+            b) Right click on any executable or text file. There will be a cut option which will appear on the top of the page.
+
+            c) Do a left click on the cut option.
+
+            d) After the cut option is selected, an paste option will appear. 
+
+            e) Go to any directory and do a left click on the paste option and the file will appear.
+        
+            f) The directory from which the file was cut will no longer have that file after the paste operation.
+
+        IV) Quit
+
+            --- Do a left click on the quit option which has a red background color.
+
+    4. Assumptions made
+
+        a) User is not interested in seeing hidden files. So all hidden files in a directory are skipped and not displayed.
+        b) user is not color blind so that he/she can read the above user guide for the functionalities he/she can user.
+
+    5. Reasons for error
+
+        Note: Each of the reasons for error mentioned below will be notified to the user during the event of an error. All the 
+              Error messages will be shown in the black box at the top of the screen with a red color font.
+
+        Note: If everything is ok, then there will be a message always in the black box at the top saying "Status: Ok" where 
+               "Ok" will have a green font.
+
+        I) File cannot be executed due to not having permissions
+        II) Text file cannot be read due to not having permissions
+        III) Directory cannot be opened due to not having permissions
+        IV) Text file is too large to be displayed. (>500 kb)
+
+
+    6.  Limitations
+
+        1) I have not handled the case where a particular text file or executable file does not have permissions to be cut/copy and
+           pasted. So no error messages are displayed.
